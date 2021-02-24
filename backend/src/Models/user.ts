@@ -8,15 +8,15 @@ export type UserDocument = mongoose.Document & {
   token: string;
   options: {
     emergencyTrade: {
-      changePercent: Number,
-      changePriodByMin: Number
-    },
-    tradeConfig:{
-      spaceBetween: Number,
-      spaceFromSecondOrder:Number
-    },
-    allowedSymbolTrade:{simbol:String,buySize:Number,sellSize:Number}[]
-  }
+      changePercent: number;
+      changePriodByMin: number;
+    };
+    tradeConfig: {
+      spaceBetween: number;
+      spaceFromSecondOrder: number;
+    };
+    allowedSymbolTrade: { simbol: string; buySize: number; sellSize: number }[];
+  };
 };
 //SCHEMA
 const userSchema = new mongoose.Schema<UserDocument>(
@@ -28,16 +28,16 @@ const userSchema = new mongoose.Schema<UserDocument>(
     options: {
       emergencyTrade: {
         changePercent: Number,
-        changePriodByMin: Number
+        changePriodByMin: Number,
       },
-      tradeConfig:{
+      tradeConfig: {
         spaceBetween: Number,
-        spaceFromSecondOrder:Number
+        spaceFromSecondOrder: Number,
       },
-      allowedSymbolTrade:[{simbol:String,buySize:Number,sellSize:Number}]
-    }
+      allowedSymbolTrade: [{ simbol: String, buySize: Number, sellSize: Number }],
+    },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 //MODEL
