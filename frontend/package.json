@@ -13,7 +13,7 @@
     "eslint:fix": "./node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
-    "@kiwicom/orbit-design-tokens": "^0.6.6",
+    "@kiwicom/orbit-design-tokens": "^0.13.9",
     "axios": "^0.19.0",
     "express": "^4.17.1",
     "next": "^9.3.2",
